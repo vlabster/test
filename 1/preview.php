@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="xyz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
 <?php
 $articleName = $_REQUEST["articleName"];
 $articleText = $_REQUEST["articleText"];
-$articleLink = __DIR__ . "\acticle.php?articleName=$articleName&articleText=$articleText";
+$articleLink = "article.php?articleName=$articleName&articleText=$articleText";
 if (strlen($articleText) > 199) {
     $article200Len = substr($articleText, 0, 199)."...";
     $count = 0;
